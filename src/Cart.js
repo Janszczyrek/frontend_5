@@ -1,15 +1,22 @@
-import React, { useState, useContext, createContext } from 'react';
+import React, { useState, useContext, createContext, useMemo } from 'react';
 import Payment from './Payment';
+import PropTypes from 'prop-types';
 
 export const CartContext = createContext({ cart: [], setCart: () => {} });
 export const CartProvider = ({ children }) => {
   const [cart, setCart] = useState([]);
+  const contextValue = useMemo(() => ({ cart, setCart }), [cart, setCart]);
   return (
-    <CartContext.Provider value={{cart, setCart}}>
+    <CartContext.Provider value={contextValue}>
       {children}
     </CartContext.Provider>
   );
 }
+
+CartProvider.propTypes = {
+  children: PropTypes.node.isRequired,
+};
+
 function Cart() {
     const contextValue = useContext(CartContext);
     const { cart, setCart } = contextValue;

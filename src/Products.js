@@ -14,6 +14,7 @@ function ProductList() {
         setProductsData(response.data);
         setIsLoading(false);
       } catch (err) {
+        console.error('Error fetching products:', err);
         setIsLoading(false);
       }
     }

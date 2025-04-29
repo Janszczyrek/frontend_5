@@ -1,4 +1,3 @@
-import React from 'react';
 import { useState, useContext } from 'react';
 import axios from "axios";
 import { CartContext } from './Cart';
@@ -27,8 +26,9 @@ function Payment() {
         <div>
             <h2>Payment</h2>
             <p>Total Amount: ${total.toFixed(2)}</p>
-            <label>Card Number:</label>
-            <input type="text" id="cardNumber" placeholder="Enter card number" onChange={e => setCardNumber(e.target.value)}/>
+            <label>Card Number:
+                <input type="text" id="cardNumber" placeholder="Enter card number" onChange={e => setCardNumber(e.target.value)}/>
+            </label>
             <button onClick={pay}>Pay Now</button>
         </div>
     );

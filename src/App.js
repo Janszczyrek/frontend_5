@@ -1,7 +1,6 @@
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom"; // Import Link for navigation
 import ProductList from "./Products";
-import Cart from "./Cart";
-import { CartProvider } from "./Cart";
+import Cart, { CartProvider } from "./Cart";
 
 function App() {
   return (
