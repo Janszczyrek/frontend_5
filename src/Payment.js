@@ -26,9 +26,7 @@ function Payment() {
         <div>
             <h2>Payment</h2>
             <p>Total Amount: ${total.toFixed(2)}</p>
-            <label>Card Number:
-                <input type="text" id="cardNumber" placeholder="Enter card number" onChange={e => setCardNumber(e.target.value)}/>
-            </label>
+            <label>Card Number:<input type="text" id="cardNumber" placeholder="Enter card number" onChange={e => setCardNumber(e.target.value)}/></label>
             <button onClick={pay}>Pay Now</button>
         </div>
     );
