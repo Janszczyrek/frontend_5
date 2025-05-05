@@ -2,3 +2,4 @@
 [![Code Smells](https://sonarcloud.io/api/project_badges/measure?project=Janszczyrek_frontend_5&metric=code_smells)](https://sonarcloud.io/summary/new_code?id=Janszczyrek_frontend_5)
 [![Vulnerabilities](https://sonarcloud.io/api/project_badges/measure?project=Janszczyrek_frontend_5&metric=vulnerabilities)](https://sonarcloud.io/summary/new_code?id=Janszczyrek_frontend_5)
 [![Security Rating](https://sonarcloud.io/api/project_badges/measure?project=Janszczyrek_frontend_5&metric=security_rating)](https://sonarcloud.io/summary/new_code?id=Janszczyrek_frontend_5)
+[![Duplicated Lines (%)](https://sonarcloud.io/api/project_badges/measure?project=Janszczyrek_frontend_5&metric=duplicated_lines_density)](https://sonarcloud.io/summary/new_code?id=Janszczyrek_frontend_5)
