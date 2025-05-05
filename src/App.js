@@ -1,3 +1,4 @@
+import React from 'react';
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom"; // Import Link for navigation
 import ProductList from "./Products";
 import Cart, { CartProvider } from "./Cart";
