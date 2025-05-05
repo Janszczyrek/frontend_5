@@ -1,0 +1,12 @@
+#!/bin/sh
+
+echo "Running eslint on all files"
+npx eslint .
+
+if [ $? -ne 0 ]; then
+  echo "eslint failed. Commit aborted."
+  exit 1
+fi
+
+echo "eslint passed. Proceeding with commit."
+exit 0
